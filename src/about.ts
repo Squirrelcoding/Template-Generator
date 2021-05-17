@@ -1,9 +1,10 @@
 #!/usr/bin/env node
+import * as figlet from "figlet"
 
-console.log("=== Template Generator ===")
-console.log("Template Generator is a CLI tool that helps you generate templates for new files!")
-console.log("Lets say you want to create a java file but forgot how to write public static void... blah blah blah.")
-console.log("Just run the command to generate a file to well... generate a file template for java!")
-console.log("We also support other languages too such as node, c++, and more!")
-console.log("")
-console.log("Repository: https://github.com/Squirrelcoding/")
+figlet('Template Generator', function(err, data) {
+  console.log(data)
+  console.log("Template Generator is a CLI tool that helps you generate templates for new files!")
+  console.log("Version: 1.0")
+  console.log("Supported Languages: node, C, C++, Java and HTML.")
+  console.log("Repository: https://github.com/Squirrelcoding/Template-Generator")
+})
